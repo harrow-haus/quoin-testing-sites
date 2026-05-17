@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocMint — PDF to DOCX in seconds</title>
+    <meta
+      name="description"
+      content="DocMint converts PDF files into clean, editable DOCX documents with layout-aware formatting in seconds."
+    />
+    <style>
+      :root {
+        --bg: #f7f8fb;
+        --ink: #12141a;
+        --muted: #4a5261;
+        --panel: #ffffff;
+        --line: #dbe0ea;
+        --accent: #325dff;
+        --accent-ink: #eef2ff;
+        --radius: 14px;
+        --space-1: 0.5rem;
+        --space-2: 0.875rem;
+        --space-3: 1.25rem;
+        --space-4: 2rem;
+        --space-5: 3rem;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        color: var(--ink);
+        background: linear-gradient(180deg, #f8faff 0%, var(--bg) 100%);
+      }
+
+      site-frame {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: var(--space-4);
+        display: block;
+      }
+
+      top-nav,
+      hero-split,
+      trust-band,
+      feature-grid,
+      process-rail,
+      cta-panel,
+      site-foot {
+        display: block;
+      }
+
+      top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: var(--space-5);
+      }
+
+      authority-mark {
+        font-size: 1.125rem;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+
+      nav-links { display: flex; gap: var(--space-3); color: var(--muted); }
+
+      hero-split {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: var(--space-4);
+        align-items: center;
+      }
+
+      density-grid,
+      recede-block,
+      focus-card,
+      mini-card,
+      step-card,
+      cta-panel {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+      }
+
+      density-grid { padding: var(--space-4); }
+      recede-block { padding: var(--space-3); }
+
+      primary-voice {
+        display: block;
+        font-size: clamp(2rem, 6vw, 3.8rem);
+        line-height: 1.02;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+      }
+
+      support-voice {
+        display: block;
+        margin-top: var(--space-3);
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.6;
+      }
+
+      action-row { display: flex; gap: var(--space-2); margin-top: var(--space-4); flex-wrap: wrap; }
+
+      primary-action,
+      ghost-action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 0.75rem 1.15rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      primary-action { background: var(--accent); color: white; }
+      ghost-action { border: 1px solid var(--line); color: var(--ink); background: #fff; }
+
+      trust-band {
+        margin-top: var(--space-5);
+        margin-bottom: var(--space-5);
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      trust-strip {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: var(--space-2);
+        margin-top: var(--space-2);
+      }
+
+      mini-card, step-card { padding: var(--space-3); }
+
+      feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: var(--space-2);
+        margin-bottom: var(--space-5);
+      }
+
+      section-title {
+        display: block;
+        font-size: 1.45rem;
+        font-weight: 750;
+        margin-bottom: var(--space-2);
+      }
+
+      process-rail {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: var(--space-2);
+        margin-bottom: var(--space-5);
+      }
+
+      cta-panel {
+        padding: var(--space-4);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--space-3);
+      }
+
+      quiet-note { color: var(--muted); }
+
+      site-foot {
+        margin-top: var(--space-4);
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 900px) {
+        hero-split,
+        feature-grid,
+        process-rail,
+        trust-strip,
+        cta-panel {
+          grid-template-columns: 1fr;
+          display: grid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <site-frame>
+      <top-nav>
+        <authority-mark>DocMint</authority-mark>
+        <nav-links>Product · Pricing · Security · Docs</nav-links>
+      </top-nav>
+
+      <hero-split>
+        <density-grid>
+          <primary-voice>Convert PDF to DOCX with zero formatting chaos.</primary-voice>
+          <support-voice>
+            Upload any PDF and get an editable Word document with preserved structure,
+            headings, tables, and typography — in under ten seconds.
+          </support-voice>
+          <action-row>
+            <primary-action href="#">Try free conversion</primary-action>
+            <ghost-action href="#">View sample output</ghost-action>
+          </action-row>
+        </density-grid>
+
+        <recede-block>
+          <section-title>Live conversion preview</section-title>
+          <quiet-note>
+            Input: quarterly_report.pdf → Output: quarterly_report.docx<br />
+            47 pages · 11 tables · 100% searchable text layer
+          </quiet-note>
+        </recede-block>
+      </hero-split>
+
+      <trust-band>
+        Trusted by operations, legal, and finance teams.
+        <trust-strip>
+          <mini-card>ISO-minded workflows</mini-card>
+          <mini-card>End-to-end encrypted transfers</mini-card>
+          <mini-card>No data used for training</mini-card>
+          <mini-card>Auto-delete after processing</mini-card>
+        </trust-strip>
+      </trust-band>
+
+      <section-title>Why teams switch to DocMint</section-title>
+      <feature-grid>
+        <focus-card class="mini-card">
+          <strong>Layout-aware conversion</strong><br />
+          Keeps columns, lists, footnotes, and page flow readable for editing.
+        </focus-card>
+        <focus-card class="mini-card">
+          <strong>OCR when you need it</strong><br />
+          Scanned files are converted into searchable and editable text automatically.
+        </focus-card>
+        <focus-card class="mini-card">
+          <strong>Batch-ready for scale</strong><br />
+          Convert entire folders of PDFs to DOCX in one run.
+        </focus-card>
+      </feature-grid>
+
+      <section-title>How it works</section-title>
+      <process-rail>
+        <step-card><strong>1. Upload</strong><br />Drop a PDF file or paste a cloud link.</step-card>
+        <step-card><strong>2. Convert</strong><br />DocMint maps structure and text into editable DOCX.</step-card>
+        <step-card><strong>3. Edit</strong><br />Open in Word and continue your workflow immediately.</step-card>
+      </process-rail>
+
+      <cta-panel>
+        <div>
+          <strong>Start converting your first PDF now.</strong><br />
+          <quiet-note>No credit card required. 20 free pages included.</quiet-note>
+        </div>
+        <primary-action href="#">Create free workspace</primary-action>
+      </cta-panel>
+
+      <site-foot>© 2026 DocMint · Built with Quoin-style semantic composition</site-foot>
+    </site-frame>
+  </body>
+</html>
