@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocMint — PDF to DOCX for serious document teams</title>
+    <meta
+      name="description"
+      content="DocMint converts complex PDFs into clean, editable DOCX files with preserved structure, tables, and layout."
+    />
+    <!-- Quoin composition target:
+      token pack: @quoin/tokens-baseline (+ editorial overrides)
+      vocabulary pack: @quoin/vocab-editorial + @quoin/vocab-dashboard
+      implementation pack: @quoin/impl-tailwind or @quoin/impl-raw-css
+    -->
+    <link rel="stylesheet" href="./tokens.css" />
+    <link rel="stylesheet" href="./impl.css" />
+  </head>
+  <body>
+    <wayfinder>
+      <a href="#">DocMint</a>
+      <a href="#">Product</a>
+      <a href="#">Security</a>
+      <a href="#">Pricing</a>
+      <a href="#">API</a>
+    </wayfinder>
+
+    <hero-banner>
+      <stack gap="loose">
+        <breadcrumb-trail>
+          <span>PDF conversion</span>
+          <span>·</span>
+          <span>Structure-preserving</span>
+          <span>·</span>
+          <span>Built for teams</span>
+        </breadcrumb-trail>
+
+        <authority-mark>Convert PDFs into editable DOCX without format damage.</authority-mark>
+
+        <lead-graf>
+          DocMint maps headings, tables, lists, references, and page flow into Word-native structure,
+          so legal, operations, and finance teams can edit immediately instead of rebuilding documents by hand.
+        </lead-graf>
+
+        <cluster>
+          <primary-action>Start free conversion</primary-action>
+          <secondary-action>Inspect sample output</secondary-action>
+        </cluster>
+      </stack>
+    </hero-banner>
+
+    <canvas-block>
+      <stack gap="loose">
+        <stack>
+          <authority-mark weight="emphasize">Conversion preview</authority-mark>
+          <recede-block>Representative output for a complex, multi-table quarterly report.</recede-block>
+        </stack>
+
+        <feature-grid min-cell-width="320px">
+          <feature-cell>
+            <stack>
+              <authority-mark weight="normal">Input</authority-mark>
+              <reading-flow>
+                <p>quarterly_board_packet.pdf</p>
+                <p>47 pages · mixed scanned + digital pages · 11 embedded tables</p>
+              </reading-flow>
+            </stack>
+          </feature-cell>
+
+          <feature-cell>
+            <stack>
+              <authority-mark weight="normal">Pipeline</authority-mark>
+              <timeline-stack>
+                <li>Text layer and OCR reconciliation</li>
+                <li>Hierarchy + heading normalization</li>
+                <li>Table reconstruction with cell alignment</li>
+                <li>Reference and footnote carryover</li>
+              </timeline-stack>
+            </stack>
+          </feature-cell>
+
+          <feature-cell>
+            <stack>
+              <authority-mark weight="normal">Output</authority-mark>
+              <reading-flow>
+                <p>quarterly_board_packet.docx</p>
+                <p>Editable styles, searchable text, reviewer-ready structure.</p>
+              </reading-flow>
+            </stack>
+          </feature-cell>
+        </feature-grid>
+
+        <pull-quote>
+          Teams switch when “copy-paste cleanup” disappears from the weekly workflow.
+        </pull-quote>
+
+        <stack>
+          <authority-mark weight="emphasize">Why DocMint</authority-mark>
+          <recede-block>Everything below is shaped for downstream editing quality, not vanity metrics.</recede-block>
+        </stack>
+
+        <feature-grid min-cell-width="280px">
+          <feature-cell>
+            <stack>
+              <authority-mark weight="normal">Layout-aware conversion</authority-mark>
+              <reading-flow><p>Preserves columns, numbering, indentation, and section flow.</p></reading-flow>
+            </stack>
+          </feature-cell>
+          <feature-cell>
+            <stack>
+              <authority-mark weight="normal">Secure by default</authority-mark>
+              <reading-flow><p>Encrypted transfer, strict retention windows, no training on customer content.</p></reading-flow>
+            </stack>
+          </feature-cell>
+          <feature-cell>
+            <stack>
+              <authority-mark weight="normal">Batch at operational scale</authority-mark>
+              <reading-flow><p>Run folder-based conversions for migrations, audits, and monthly reporting cycles.</p></reading-flow>
+            </stack>
+          </feature-cell>
+        </feature-grid>
+
+        <stack>
+          <authority-mark weight="emphasize">How it works</authority-mark>
+          <timeline-stack>
+            <li><strong>01 Upload</strong> — Drop a PDF or connect cloud storage.</li>
+            <li><strong>02 Convert</strong> — DocMint resolves structure into editable DOCX semantics.</li>
+            <li><strong>03 Deliver</strong> — Download, review, and continue in Word immediately.</li>
+          </timeline-stack>
+        </stack>
+
+        <cta-band>
+          <stack>
+            <authority-mark weight="normal">Ready to run your first conversion?</authority-mark>
+            <recede-block>20 free pages included. No credit card required.</recede-block>
+            <cluster>
+              <primary-action>Create workspace</primary-action>
+              <secondary-action>Talk to sales</secondary-action>
+            </cluster>
+          </stack>
+        </cta-band>
+
+        <colophon weight="recede">© 2026 DocMint · Quoin semantic design demo</colophon>
+      </stack>
+    </canvas-block>
+  </body>
+</html>
