@@ -1,0 +1,35 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "Harrow Haus brand overrides. Project-local token file consumed via the compiler's `projectTokens` option. Layers on top of @quoin/tokens-geist as a base, overriding only the names that define the Harrow Haus identity.",
+
+  "surface":          { "$value": "oklch(95% 0.012 80)",  "$type": "color" },
+  "surface-elevated": { "$value": "oklch(98% 0.008 80)",  "$type": "color" },
+  "surface-recessed": { "$value": "oklch(92% 0.014 80)",  "$type": "color" },
+  "surface-inverse":  { "$value": "oklch(15% 0.014 30)",  "$type": "color" },
+
+  "text":             { "$value": "oklch(22% 0.014 30)",  "$type": "color" },
+  "text-emphasis":    { "$value": "oklch(14% 0.014 30)",  "$type": "color" },
+  "text-recede":      { "$value": "oklch(45% 0.012 30)",  "$type": "color" },
+
+  "border":           { "$value": "oklch(82% 0.012 30)",  "$type": "color" },
+  "border-emphasis":  { "$value": "oklch(14% 0.014 30)",  "$type": "color" },
+  "border-recede":    { "$value": "oklch(88% 0.010 30)",  "$type": "color" },
+
+  "accent":           { "$value": "oklch(14% 0.014 30)",  "$type": "color" },
+  "accent-recede":    { "$value": "oklch(92% 0.014 30)",  "$type": "color" },
+
+  "font-sans":    { "$value": "'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif", "$type": "fontFamily" },
+  "font-serif":   { "$value": "'Newsreader', 'Crimson Pro', Georgia, ui-serif, serif", "$type": "fontFamily" },
+  "font-display": { "$value": "'Newsreader', 'Crimson Pro', Georgia, ui-serif, serif", "$type": "fontFamily" },
+  "font-mono":    { "$value": "'JetBrains Mono', ui-monospace, monospace", "$type": "fontFamily" },
+
+  "type-size-display": { "$value": "5.5rem", "$type": "dimension" },
+  "tracking-tight":    { "$value": "-0.03em", "$type": "dimension" },
+  "leading-prose":     { "$value": "1.65", "$type": "number" },
+  "measure-prose":     { "$value": "62ch", "$type": "dimension" },
+
+  "radius-card":  { "$value": "0",       "$type": "dimension" },
+  "radius-frame": { "$value": "0",       "$type": "dimension" },
+  "radius-md":    { "$value": "0",       "$type": "dimension" },
+  "radius-lg":    { "$value": "0",       "$type": "dimension" }
+}
